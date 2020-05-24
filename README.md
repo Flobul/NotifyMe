@@ -4,22 +4,24 @@ Envoi une notification depuis le terminal de l'appareil.
 
 ```
 iPhone:~ root# notifyme 
-Usage: Notifyme [arguments...]
-  -t: title/header text
-  -m: message text
-  -d: default button text
-  -a: alternate button text
-  -o: other button text
-  -q: timeout in seconds
-  -p: prompt for text input
-  -v: default value for text input
-  -h: This help message
+Usage: notifyme [arguments...]
+      -t    Titre           - titre de la notification      (optionel)
+                              défaut : "Titre de la notification"
+      -m    Message         - message de la notification    (optionel)
+                              défaut : "Voici le message." 
+      -d:   bouton par défaut
+      -a:   bouton alternatif
+      -o:   autre buton
+      -q:   interval en secondes
+      -p:   champ texte
+      -v:   message du champ texte
+      -h:   affiche l'aide
 
-  It will exit with a status code of the result:
-     0: Default Button
-     1: Alternate Button
-     2: Other Button
-     3: Timeout
+  Voici les valeurs de retour en fonction du bouton choisi :
+     0 : bouton par défaut
+     1 : bouton alternatif
+     2 : autre bouton
+     3 : interval
 iPhone:~ root# notifyme -t Titre -m Message -a Bouton
 ```
 
