@@ -1,9 +1,9 @@
 Package: com.flobul.notifyme
 Name: notifyme
 Depends: mobilesubstrate
-Version: 0.1.0
+Version: 0.1.1
 Architecture: iphoneos-arm
 Description: A command line tool to send notifications.
 Maintainer: Flobul <flobul.jeedom@gmail.com>
-Author: Flobul
+Author: Flobul <flobul.jeedom@gmail.com>
 Section: System
